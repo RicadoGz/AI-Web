@@ -21,6 +21,11 @@ body {
     sans-serif;
 }
 
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
 .liquid-glass {
   position: relative;
   overflow: hidden;
@@ -53,4 +58,34 @@ body {
     linear-gradient(#fff 0 0);
   -webkit-mask-composite: xor;
   mask-composite: exclude;
+}
+
+.project-card {
+  box-shadow:
+    0 16px 48px rgba(0, 0, 0, 0.28),
+    inset 0 1px 0 rgba(255, 255, 255, 0.05);
+}
+
+.low-key-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 9999px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  color: rgba(255, 255, 255, 0.52);
+  background: rgba(255, 255, 255, 0.02);
+  transition:
+    color 200ms ease,
+    border-color 200ms ease,
+    background 200ms ease,
+    transform 200ms ease;
+}
+
+.low-key-link:hover {
+  color: rgba(255, 255, 255, 0.88);
+  border-color: rgba(155, 185, 255, 0.28);
+  background: rgba(255, 255, 255, 0.04);
+  transform: translateY(-1px);
 }
