@@ -2,7 +2,7 @@
 
 This repository now contains a minimal personal website starter with:
 
-- `frontend/`: Next.js app with a homepage, visit tracker, and chat widget
+- `frontend/`: Vite + React + TypeScript + Tailwind single-page cinematic hero
 - `backend/`: FastAPI app with chat and analytics endpoints
 
 ## Frontend
@@ -13,7 +13,7 @@ npm install
 npm run dev
 ```
 
-Set `NEXT_PUBLIC_API_BASE_URL` if your backend is not running on `http://127.0.0.1:8000`.
+The Vite dev server runs on `http://localhost:5173` by default.
 
 ## Backend
 
