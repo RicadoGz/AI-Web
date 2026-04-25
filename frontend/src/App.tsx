@@ -1,5 +1,5 @@
-import { FormEvent, useEffect, useRef } from "react";
-import { ArrowRight, Globe, Instagram, Twitter } from "lucide-react";
+import { useEffect, useRef } from "react";
+import { Globe, Instagram, Twitter } from "lucide-react";
 
 const VIDEO_URL =
   "https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20260328_115001_bcdaa3b4-03de-47e7-ad63-ae3e392c32d4.mp4";
@@ -111,10 +111,6 @@ export default function App() {
     };
   }, []);
 
-  const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
-    event.preventDefault();
-  };
-
   return (
     <div className="min-h-screen overflow-hidden bg-black">
       <div className="relative flex min-h-screen flex-col">
@@ -173,49 +169,7 @@ export default function App() {
           </div>
         </nav>
 
-        <main className="relative z-10 flex flex-1 -translate-y-[20%] flex-col items-center justify-center px-6 py-12 text-center">
-          <h1
-            className="mb-8 whitespace-nowrap text-5xl tracking-tight text-white md:text-6xl lg:text-7xl"
-            style={{ fontFamily: "'Instrument Serif', serif" }}
-          >
-            Built for the curious
-          </h1>
-
-          <div className="w-full max-w-xl space-y-4">
-            <form
-              className="liquid-glass flex items-center gap-3 rounded-full pl-6 pr-2 py-2"
-              onSubmit={handleSubmit}
-            >
-              <input
-                aria-label="Enter your email"
-                className="w-full bg-transparent text-base text-white placeholder:text-white/40 focus:outline-none"
-                placeholder="Enter your email"
-                type="email"
-              />
-              <button
-                aria-label="Submit email"
-                className="rounded-full bg-white p-3 text-black"
-                type="submit"
-              >
-                <ArrowRight size={20} />
-              </button>
-            </form>
-
-            <p className="px-4 text-sm leading-relaxed text-white">
-              Stay updated with the latest news and insights. Subscribe to our newsletter
-              today and never miss out on exciting updates.
-            </p>
-
-            <div className="flex justify-center">
-              <button
-                className="liquid-glass rounded-full px-8 py-3 text-sm font-medium text-white transition-colors hover:bg-white/5"
-                type="button"
-              >
-                Manifesto
-              </button>
-            </div>
-          </div>
-        </main>
+        <main className="relative z-10 flex-1 -translate-y-[20%]" />
 
         <footer className="relative z-10 flex justify-center gap-4 pb-12">
           <a
