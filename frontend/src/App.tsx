@@ -126,49 +126,6 @@ export default function App() {
         <div className="absolute inset-0 bg-black/55" />
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(255,255,255,0.1),transparent_35%),linear-gradient(180deg,rgba(0,0,0,0.15)_0%,rgba(0,0,0,0.68)_100%)]" />
 
-        <nav className="relative z-20 px-6 py-6">
-          <div className="liquid-glass mx-auto flex max-w-5xl items-center justify-between rounded-full px-6 py-3">
-            <div className="flex items-center gap-8">
-              <a className="flex items-center gap-2" href="/">
-                <Globe className="text-white" size={24} />
-                <span className="text-lg font-semibold text-white">Asme</span>
-              </a>
-              <div className="hidden items-center gap-8 md:flex">
-                <a
-                  className="text-sm font-medium text-white/80 transition-colors hover:text-white"
-                  href="#features"
-                >
-                  Features
-                </a>
-                <a
-                  className="text-sm font-medium text-white/80 transition-colors hover:text-white"
-                  href="#pricing"
-                >
-                  Pricing
-                </a>
-                <a
-                  className="text-sm font-medium text-white/80 transition-colors hover:text-white"
-                  href="#about"
-                >
-                  About
-                </a>
-              </div>
-            </div>
-
-            <div className="flex items-center gap-4">
-              <button className="text-sm font-medium text-white" type="button">
-                Sign Up
-              </button>
-              <button
-                className="liquid-glass rounded-full px-6 py-2 text-sm font-medium text-white transition-colors hover:bg-white/5"
-                type="button"
-              >
-                Login
-              </button>
-            </div>
-          </div>
-        </nav>
-
         <main className="relative z-10 flex-1 -translate-y-[20%]" />
 
         <footer className="relative z-10 flex justify-center gap-4 pb-12">
