@@ -123,8 +123,8 @@ export default function App() {
           src={VIDEO_URL}
           style={{ opacity: 0 }}
         />
-        <div className="absolute inset-0 bg-black/55" />
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(255,255,255,0.1),transparent_35%),linear-gradient(180deg,rgba(0,0,0,0.15)_0%,rgba(0,0,0,0.68)_100%)]" />
+        <div className="absolute inset-0 bg-black/38" />
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(255,255,255,0.1),transparent_35%),radial-gradient(circle_at_bottom,rgba(255,255,255,0.18),transparent_42%),linear-gradient(180deg,rgba(0,0,0,0.08)_0%,rgba(0,0,0,0.5)_100%)]" />
 
         <main className="relative z-10 flex-1 -translate-y-[20%]" />
 
